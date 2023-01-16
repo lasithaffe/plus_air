@@ -1,3 +1,7 @@
+@extends('layout.layout')
+ 
+@section('content')
+ 
 <header>
 
 <div id="sticky-header" class=" transparent-header">
@@ -745,50 +749,54 @@
         </div>
     </section>
     <!-- fly-next-area-end -->
-
-    <!-- brand-area -->
-    <div class="brand-area brand-bg">
-        <div class="container">
-            <div class="row brand-active">
-                <div class="col-12">
-                    <div class="brand-item">
-                        <img src="assets/img/brand/brand_img01.png" alt="">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="brand-item">
-                        <img src="assets/img/brand/brand_img02.png" alt="">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="brand-item">
-                        <img src="assets/img/brand/brand_img03.png" alt="">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="brand-item">
-                        <img src="assets/img/brand/brand_img04.png" alt="">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="brand-item">
-                        <img src="assets/img/brand/brand_img05.png" alt="">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="brand-item">
-                        <img src="assets/img/brand/brand_img06.png" alt="">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="brand-item">
-                        <img src="assets/img/brand/brand_img03.png" alt="">
+<section>
+<div class="brand-area brand-bg">
+                <div class="container">
+                    <div class="row brand-active">
+                        <div class="col-12">
+                            <div class="brand-item">
+                                <img src="assets/img/brand/brand_img01.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="brand-item">
+                                <img src="assets/img/brand/brand_img02.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="brand-item">
+                                <img src="assets/img/brand/brand_img03.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="brand-item">
+                                <img src="assets/img/brand/brand_img04.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="brand-item">
+                                <img src="assets/img/brand/brand_img05.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="brand-item">
+                                <img src="assets/img/brand/brand_img06.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="brand-item">
+                                <img src="assets/img/brand/brand_img03.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- brand-area-end -->
+            <!-- brand-area-end -->
+            
+</section>
+     <!-- brand-area -->
+     
+     
     <!-- blog-area -->
     <section class="blog-area blog-bg">
         <div class="container">
@@ -963,3 +971,5 @@
 
 </main>
 <!-- main-area-end -->
+@endsection
+ 

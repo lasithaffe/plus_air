@@ -749,9 +749,8 @@
         </div>
     </section>
     <!-- fly-next-area-end -->
-
-      <!-- brand-area -->
-      <div class="brand-area brand-bg">
+<section>
+<div class="brand-area brand-bg">
                 <div class="container">
                     <div class="row brand-active">
                         <div class="col-12">
@@ -793,6 +792,11 @@
                 </div>
             </div>
             <!-- brand-area-end -->
+            
+</section>
+     <!-- brand-area -->
+     
+     
     <!-- blog-area -->
     <section class="blog-area blog-bg">
         <div class="container">

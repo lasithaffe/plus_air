@@ -1,25 +1,46 @@
+<!-- footer-area -->
 <footer>
         <div class="footer-area footer-bg">
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="col-xl-4 col-lg-5 col-md-6">
                             <div class="footer-widget">
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                    <a href="index.html"><img src="assets/img/svg/logo-footer.png" alt=""></a>
                                 </div>
                                 <div class="footer-content">
-                                    <p>Online to make your journey even more memorable access or meet</p>
+                                    <p>Subscribe</p>
+                                    <div class="footer-contact">
+
+                                        <form action="#">
+                                            <input type="email" placeholder="Enter your email">
+                                            <button type="submit">Subscribe</button>
+                                        </form>
+                                    </div>
                                     <ul class="footer-social">
-                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li>
+                                            <a href="#"><img src="assets/img/svg/twitter.svg" alt="twitter" /></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="assets/img/svg/facebook.svg" alt="twitter" /></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="assets/img/svg/instagram.svg" alt="twitter" /></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="assets/img/svg/youtube.svg" alt="twitter" /></i>
+                                            </a>
+                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="col-xl-4 col-lg-4 col-md-6">
                             <div class="footer-widget">
                                 <div class="fw-title">
                                     <h4 class="title">Explore</h4>
@@ -39,7 +60,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-sm-4">
+                        <div class="col-xl-4 col-lg-4 col-sm-4">
                             <div class="footer-widget privacy">
                                 <div class="fw-title">
                                     <h4 class="title">Privacy</h4>
@@ -55,22 +76,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-sm-8">
-                            <div class="footer-widget">
-                                <div class="fw-title">
-                                    <h4 class="title">Contacts</h4>
-                                </div>
-                                <div class="footer-contact">
-                                    <p>PO Box W75 Street lan West new queens</p>
-                                    <h2 class="title"><a href="tel:0123456789">+1 246 333 - 0079</a></h2>
-                                    <a href="#">geair@company.com</a>
-                                    <form action="#">
-                                        <input type="email" placeholder="Enter your email">
-                                        <button type="submit"><i class="flaticon-send"></i></button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -79,7 +84,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <div class="copyright-text">
-                                <p>Copyright © 2022.All Rights Reserved By <span>Geair</span></p>
+                                <p>Copyright © 2022.All Rights Reserved By <span>Plus Airfare</span></p>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -93,7 +98,7 @@
         </div>
     </footer>
     <!-- footer-area-end -->
- 
+
     <!-- JS here -->
     <script src={{asset("assets/js/vendor/jquery-3.6.0.min.js")}}></script>
     <script src={{asset("assets/js/bootstrap.min.js")}}></script>
