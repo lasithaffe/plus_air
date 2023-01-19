@@ -1,7 +1,7 @@
 @extends('layout.layout')
  
 @section('content')
- 
+
 <header>
 
 <div id="sticky-header" class=" transparent-header">
@@ -139,9 +139,20 @@
                                         <form action="#" class="booking-form">
                                             <ul>
                                                 <li>
+                                                    
                                                     <div class="form-grp">
-                                                        <input type="text" placeholder="From">
-                                                    </div>
+                                                                <input type="text" class="form-control" placeholder="From" list="list-timezone" id="input-datalist">
+                                                                <datalist id="list-timezone">
+                                                                <?php 
+
+                                                                    foreach ($airports as $key ){
+                                                                       
+                                                                    
+                                                                    ?>
+                                                                     <option value="<?=$key->code?>" id="<?=$key->code?>"><?=$key->cityName?></option>
+                                                                   <?php } ?>
+                                                                </datalist>
+                                                            </div>
                                                 </li>
                                                 <li>
                                                     <div class="form-grp">
@@ -269,9 +280,14 @@
                                         <form action="#" class="booking-form">
                                             <ul>
                                                 <li>
-                                                    <div class="form-grp">
-                                                        <input type="text" placeholder="From">
-                                                    </div>
+                                                <div class="form-grp">
+                                                                <input type="text" class="form-control" placeholder="From" list="list-timezone" id="input-datalist">
+                                                                <datalist id="list-timezone">
+                                                                    
+                                                                     <option></option>
+                                                                   <?php  ?>
+                                                                </datalist>
+                                                            </div>
                                                 </li>
                                                 <li>
                                                     <div class="form-grp">
