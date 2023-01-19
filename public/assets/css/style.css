@@ -2314,7 +2314,7 @@ label {
     margin-bottom: 0;
     text-transform: uppercase;
     text-align: center;
-    background: #57112f;
+    background: #257874;
     padding: 14px 15px;
 }
 
@@ -2892,7 +2892,7 @@ label {
 .booking-details-area .primary-contact {
     display: flex;
     align-items: center;
-    background: #57112f;
+    background: #257874;
     padding: 15px 30px;
     border-radius: 5px 5px 0 0;
 }
@@ -3098,7 +3098,7 @@ label {
     margin-bottom: 0;
     font-weight: 600;
     color: #fff;
-    background: #57112f;
+    background: #257874;
     padding: 15px 25px;
 }
 
@@ -4510,4 +4510,10 @@ body .backtag {
 
 .white-text {
     color: #ffffff !important;
+}
+
+.row-color {
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: #e8f9f8;
 }

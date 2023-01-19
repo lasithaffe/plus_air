@@ -24,7 +24,7 @@ class HomeController extends Controller
             // return 'Could not connect to the database. '.$e;
         }
        
-        return view('home')->with(compact('airports'));;
+        return view('home')->with(compact('airports'));
        
     }
 }

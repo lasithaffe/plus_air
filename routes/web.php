@@ -16,4 +16,6 @@ use App\Http\Controllers\HomeController;
 //     return view('welcome');
 // });
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/booking', 'BookingController@booking')->name('booking');
+

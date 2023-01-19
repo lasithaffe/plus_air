@@ -2,75 +2,6 @@
  
 @section('content')
 
-<header>
-
-<div id="sticky-header" class=" transparent-header">
-    <div class="container custom-container">
-        <div class="row">
-            <div class="col-12">
-
-                <div class="menu-wrap">
-                    <nav class="menu-nav">
-                        <div class="logo">
-                            <a href="index.html"><img src="assets/img/logo-wplus.png" alt=""></a>
-                        </div>
-                        <div class="navbar-wrap main-menu d-none d-lg-flex">
-                            <ul class="navigation">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li class="menu-item-has-children"><a href="#">Pages</a>
-                                    <ul class="submenu">
-                                        <li><a href="booking-list.html">Booking List</a></li>
-                                        <li><a href="booking-details.html">Booking Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children"><a href="#">Blog</a>
-                                    <ul class="submenu">
-                                        <li><a href="blog.html">Our Blog</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-action d-none d-md-block">
-                            <ul>
-
-                                <li class=" header-btn"><a href="contact.html" class="white-text btn-reg btn">Register</a></li>
-                                <li class="header-btn sign-in"><a href="contact.html" class="white-text btn">Sign In</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <!-- Mobile Menu  -->
-                <div class="mobile-menu">
-                    <nav class="menu-box">
-                        <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
-                        <div class="nav-logo">
-                            <a href="index.html"><img src="assets/img/logo/logo-v1.png" alt="" title=""></a>
-                        </div>
-                        <div class="menu-outer">
-                            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-                        </div>
-                        <div class="social-links">
-                            <ul class="clearfix">
-                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
-                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                <li><a href="#"><span class="fab fa-youtube"></span></a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <div class="menu-backdrop"></div>
-                <!-- End Mobile Menu -->
-            </div>
-        </div>
-    </div>
-</div>
-</header>
-<!-- header-area-end -->
 <!-- main-area -->
 <main>
 <div class="video-container">
@@ -136,18 +67,18 @@
                                                 <li><span>Just from $12</span>Geair Stopover</li>
                                             </ul>
                                         </div>
-                                        <form action="#" class="booking-form">
+                                        <form action="{{ route('booking') }}" >
+                                        <div class="booking-form"  >
                                             <ul>
                                                 <li>
                                                     
                                                     <div class="form-grp">
-                                                                <input type="text" class="form-control" placeholder="From" list="list-timezone" id="input-datalist">
-                                                                <datalist id="list-timezone">
+                                                                <input type="text" id="fromAirport" name="fromAirport" class="form-control"  placeholder="From" list="list-timezone" id="input-datalist">
+                                                                <datalist id="list-timezone" id="fromAirport" name="fromAirport">
                                                                 <?php 
 
                                                                     foreach ($airports as $key ){
-                                                                       
-                                                                    
+
                                                                     ?>
                                                                      <option value="<?=$key->code?>" id="<?=$key->code?>"><?=$key->cityName?></option>
                                                                    <?php } ?>
@@ -156,14 +87,24 @@
                                                 </li>
                                                 <li>
                                                     <div class="form-grp">
-                                                        <input type="text" placeholder="To">
-                                                        <button class="exchange-icon"><i class="flaticon-exchange-1"></i></button>
+                                                    <div class="form-grp">
+                                                                <input type="text" id="toAirport" name="toAirport" class="form-control" placeholder="From" list="list-timezone" id="input-datalist">
+                                                                <datalist id="list-timezone" id="toAirport" name="toAirport">
+                                                                <?php 
+
+                                                                    foreach ($airports as $key ){
+
+                                                                    ?>
+                                                                     <option value="<?=$key->code?>" id="<?=$key->code?>"><?=$key->cityName?></option>
+                                                                   <?php } ?>
+                                                                </datalist>
+                                                            </div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="form-grp select">
                                                         <label for="shortBy">Trip</label>
-                                                        <select id="shortBy" name="select" class="form-select" aria-label="Default select example">
+                                                        <select id="shortBy" name="Tour_type" class="form-select" aria-label="Default select example">
                                                                 <option value="">Tour type</option>
                                                                 <option>Adventure Travel</option>
                                                                 <option>Family Tours</option>
@@ -177,27 +118,39 @@
                                                         <ul>
                                                             <li>
                                                                 <label for="shortBy">Depart</label>
-                                                                <input type="text" class="date" placeholder="Select Date">
+                                                                <input type="text" class="date" name="depart_date" id="depart_date" placeholder="Select Date">
                                                             </li>
                                                             <li>
                                                                 <label for="shortBy">Return</label>
-                                                                <input type="text" class="date" placeholder="Select Date">
+                                                                <input type="text" class="date" name="return_date" id="return_date" placeholder="Select Date">
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <div class="form-grp economy">
+                                                    <div class="form-grp select">
                                                         <label for="text">Passenger/ Class</label>
-                                                        <input type="text" id="text" placeholder="1 Passenger, Economy">
+                                                        <select id="shortBy" name="Passenger_type" class="form-select" aria-label="Default select example">
+                                                                <option value="">Passenger type</option>
+                                                                <option>Passenger 1</option>
+                                                                <option>Passenger 2</option>
+                                                                <option>Passenger 3</option>
+                                                                <option>Passenger 4</option>
+                                                            </select>
+                                                       
                                                     </div>
                                                 </li>
                                             </ul>
-                                        </form>
-                                        <div class="content-bottom">
-                                            <a href="booking-details.html" class="promo-code">+ Add Promo code</a>
-                                            <a href="booking-details.html" class="btn">Show Flights <i class="flaticon-flight-1"></i></a>
+                                            
+                                        
+                                      
                                         </div>
+                                        <div class="content-bottom">
+                                            <!-- <a href="booking-details.html" class="promo-code">+ Add Promo code</a> -->
+                                            <button type="submit" class="btn" value="Show Flights"> Submit <i class="flaticon-flight-1"></i></button>
+
+                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -986,6 +939,19 @@
 
 
 </main>
+<script>
+$( document ).ready(function() {
+$("#toAirport").change(function(){
+    alert("g");
+  var el=$("#SelectColor")[0];  //used [0] is to get HTML DOM not jquery Object
+  var dl=$("#AllColors")[0];
+  if(el.value.trim() != ''){
+  var opSelected = dl.querySelector(`[value="${el.value}"]`);
+  alert(opSelected.getAttribute('id'));
+ }
+})
+});
+</script>
 <!-- main-area-end -->
 @endsection
  
