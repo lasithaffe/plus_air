@@ -18,4 +18,13 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/booking', 'BookingController@booking')->name('booking');
+Route::get('/inquiry', 'BookingController@inquiry')->name('inquiry');
+Route::get('/car', 'BookingController@car')->name('car');
+Route::get('/hotels', 'BookingController@hotels')->name('hotels');
+Route::get('/about', 'ContentController@about')->name('about');
+Route::get('/contact', 'ContentController@contact')->name('contact');
+Route::get('/blog', 'ContentController@blog')->name('blog');
+Route::get('/cruises', 'BookingController@cruises')->name('cruises');
+Route::get('/insurance', 'BookingController@insurance')->name('insurance');
+Route::get('/onewaybooking', 'BookingController@onewaybooking')->name('onewaybooking');
 

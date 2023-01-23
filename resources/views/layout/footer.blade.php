@@ -7,7 +7,7 @@
                         <div class="col-xl-4 col-lg-5 col-md-6">
                             <div class="footer-widget">
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/svg/logo-footer.png" alt=""></a>
+                                    <a href=""><img src="assets/img/svg/logo-footer.png" alt=""></a>
                                 </div>
                                 <div class="footer-content">
                                     <p>Subscribe</p>
@@ -47,15 +47,15 @@
                                 </div>
                                 <div class="fw-link">
                                     <ul>
-                                        <li><a href="about.html">About us</a></li>
-                                        <li><a href="contact.html">Travel alerts</a></li>
-                                        <li><a href="contact.html">Awards</a></li>
-                                        <li><a href="contact.html">Qatarisation</a></li>
-                                        <li><a href="contact.html">Careers</a></li>
-                                        <li><a href="contact.html">Beyond</a></li>
-                                        <li><a href="contact.html">Press release</a></li>
-                                        <li><a href="contact.html">Airways Cargo</a></li>
-                                        <li><a href="contact.html">Sponsorship</a></li>
+                                        <li><a href="{{ route('about') }}">About us</a></li>
+                                        <li><a href="">Travel alerts</a></li>
+                                        <li><a href="">Awards</a></li>
+                                        <li><a href="">Qatarisation</a></li>
+                                        <li><a href="">Careers</a></li>
+                                        <li><a href="">Beyond</a></li>
+                                        <li><a href="">Press release</a></li>
+                                        <li><a href="">Airways Cargo</a></li>
+                                        <li><a href="">Sponsorship</a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -12,12 +12,12 @@
                 <div class="menu-wrap">
                     <nav class="menu-nav">
                         <div class="logo">
-                            <a href="index.html"><img src="assets/img/logo-wplus.png" alt=""></a>
+                            <a href=""><img src="assets/img/logo-wplus.png" alt=""></a>
                         </div>
                         <div class="navbar-wrap main-menu d-none d-lg-flex">
                             <ul class="navigation">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
+                                <li class="active"><a href="">Home</a></li>
+                                <li><a href="{{ route('about') }}">About</a></li>
                                 <li class="menu-item-has-children"><a href="#">Pages</a>
                                     <ul class="submenu">
                                         <li><a href="booking-list.html">Booking List</a></li>
@@ -30,14 +30,14 @@
                                         <li><a href="blog-details.html">Blog Details</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="">Contact</a></li>
                             </ul>
                         </div>
                         <div class="header-action d-none d-md-block">
                             <ul>
 
-                                <li class=" header-btn"><a href="contact.html" class="white-text btn-reg btn">Register</a></li>
-                                <li class="header-btn sign-in"><a href="contact.html" class="white-text btn">Sign In</a></li>
+                                <li class=" header-btn"><a href="" class="white-text btn-reg btn">Register</a></li>
+                                <li class="header-btn sign-in"><a href="" class="white-text btn">Sign In</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -47,7 +47,7 @@
                     <nav class="menu-box">
                         <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
                         <div class="nav-logo">
-                            <a href="index.html"><img src="assets/img/logo/logo-v1.png" alt="" title=""></a>
+                            <a href=""><img src="assets/img/logo/logo-v1.png" alt="" title=""></a>
                         </div>
                         <div class="menu-outer">
                             <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
@@ -85,7 +85,7 @@
                         <h2 class="title" data-animation="fadeInUp" data-delay=".2s">An <span>Airline</span> without <span>Aircraft.</span> </h2>
                         <p data-animation="fadeInUp" data-delay=".4s">Plus Airfare is our core service where we offer flights to clients while taking care of every aspect of the flight from the time they book with us till they reach their destination. Our dedicated team of professionals with
                             special access to information on airline operations is ready 24/7 to attend to any problem associated with the flights so that our clients can enjoy a hassle-free travel experience.</p>
-                        <a href="contact.html" class="btn" data-animation="fadeInUp" data-delay=".6s">Sign in / Register</a>
+                        <a href="" class="btn" data-animation="fadeInUp" data-delay=".6s">Sign in / Register</a>
                     </div>
                 </div>
             </div>
@@ -104,10 +104,10 @@
                 <div class="booking-tag">
                     <ul>
                         <li><a href="booking-list.html"><i class="flaticon-flight"></i>Flights</a></li>
-                        <li><a href="booking-list.html"><i class="flaticon-car-1"></i>Car Rentals</a></li>
-                        <li><a href="booking-list.html"><i class="flaticon-eiffel-tower"></i>Meet and Assist</a></li>
-                        <li><a href="booking-list.html"><i class="flaticon-hotels"></i>Hotel</a></li>
-                        <li><a href="booking-list.html"><i class="flaticon-taxi"></i>Chuffer Service</a></li>
+                        <li><a href="booking-list.html"><i class="flaticon-car-1"></i>Hotels</a></li>
+                        <li><a href="booking-list.html"><i class="flaticon-eiffel-tower"></i>Cruises</a></li>
+                        <li><a href="booking-list.html"><i class="flaticon-hotels"></i>Car rentals</a></li>
+                        <li><a href="booking-list.html"><i class="flaticon-taxi"></i>Insurance</a></li>
                     </ul>
                 </div>
                 <div class="booking-wrap">

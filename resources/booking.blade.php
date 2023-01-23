@@ -15,7 +15,7 @@
                                 <h2 class="title">Booking Details</h2>
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="">Home</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">Booking Details</li>
                                     </ol>
                                 </nav>
@@ -256,25 +256,7 @@
                                         <li><a href="#"><img src="assets/img/images/bank_logo06.png" alt=""></a></li>
                                     </ul>
                                 </div>
-                                <div class="widget">
-                                    <h2 class="widget-title">Your price summary</h2>
-                                    <div class="price-summary-top">
-                                        <ul>
-                                            <li>Details</li>
-                                            <li>Amount</li>
-                                        </ul>
-                                    </div>
-                                    <div class="price-summary-detail">
-                                        <ul>
-                                            <li>Adult x 1 <span>$1,056</span></li>
-                                            <li>Tax x 1 <span>$35</span></li>
-                                            <li>Total Airfare: <span>$1,091</span></li>
-                                            <li>Discount<span>- $110</span></li>
-                                            <li>Total Payable<span>$981.00</span></li>
-                                        </ul>
-                                        <a href="#" class="btn">Pay now</a>
-                                    </div>
-                                </div>
+                               
                             </aside>
                         </div>
                     </div>
